@@ -1,0 +1,34 @@
+BPP Project Open Issues
+-----------										7/9/2018
+
+1. MACSS LOA Save (LOAAUTHENTER) needs to have image (Auth_i_link_loc_tx) added to save.  - Done
+2. MACSS LOA Read (LOAAUTHREVIEW) not returning good image name data.  The rest of the data is being returned correctly. - Done
+3. Save return message to include "ERROR" or "SUCCESS" as the start of the message.
+4. Interfacing with Doc-u-mentum needs to be developed and tested for reading and saving files. - Done
+5. Definition of screens needed for black listing. - LOA Auditing.
+6. Make provider name list to include long name.  - Done
+7. MACSS LOA Save (LOAAUTHENTER) needs to have Auth_i_chgd_tx added to save interface.  - Done
+8. Getting the environment setup with data and configuration where the entire application is fully functional.
+9. For the View LOA by Provider screen, functionality for returning multiple LOA's based on provider, request start date,
+   and request end date.
+	a. input fields to be sent to LOA Read (LOAAUTHREVIEW) to hold the request start date and request end date range
+	b. data structure returned from the call in the response containing the list of LOA's
+10. When creating a new LOA for the same existing SDI and provider, the dates are the same values as the old LOA's. - Done
+11. Add informaional images and messages to all input controls.  Messages are to be determined per Diana.
+12. Add calendar extender to end date. - Done
+13. Get Shadow service for creating an audit
+14. Get shadow service for reading an audit by audit name
+15. Get shadow service for saving an audit
+16. Get shadow service for reading list of exiting audit names
+14. Adjust the LOA file name format to not include LOA Start Date. - Done  test - Done
+15. Validate all SDI entries
+16. Make documentum path a web config value. - Done
+17. Get Hadoop connection completed to get the 15 min data.
+	- Hadoop data model for 15 minute data (table name and column names).
+18. Get shadow service for reading matching Loa data rows by search criteria SDI, provider, startDate, endDate, source, 
+	returns an array to be placed into lOASearchResults.
+19. Add black list pages.
+20. Get shadow services to support black list pages.
+21. Add display name to screens.
+22. Get shadow service for providers to include display name.
+23. Get shadow services for black list pages
